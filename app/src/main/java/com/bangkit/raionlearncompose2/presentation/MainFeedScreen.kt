@@ -1,4 +1,4 @@
-package com.bangkit.raionlearncompose2
+package com.bangkit.raionlearncompose2.presentation
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.lazy.grid.GridCells

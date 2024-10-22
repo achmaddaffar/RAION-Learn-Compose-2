@@ -25,6 +25,8 @@ googleServices = "4.4.2"
 workRuntimeKtx = "2.9.1"
 paging="3.3.2"
 room="2.6.1"
+retrofit = "2.11.0"
+converterGson = "2.11.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -68,9 +70,12 @@ room-ktx = {module = "androidx.room:room-ktx", version.ref = "room"}
 room-runtime = {module = "androidx.room:room-runtime", version.ref = "room"}
 room-compiler = {module = "androidx.room:room-compiler", version.ref = "room"}
 room-paging = {module = "androidx.room:room-paging", version.ref = "room"}
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 sentry = { id = "io.sentry.android.gradle", version.ref = "sentry"}
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize",  version.ref = "kotlin"  }

@@ -1,4 +1,4 @@
-package com.bangkit.raionlearncompose2.ui.theme
+package com.bangkit.raionlearncompose2.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

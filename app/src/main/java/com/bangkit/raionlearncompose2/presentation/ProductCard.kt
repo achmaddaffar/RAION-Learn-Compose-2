@@ -1,4 +1,4 @@
-package com.bangkit.raionlearncompose2
+package com.bangkit.raionlearncompose2.presentation
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
