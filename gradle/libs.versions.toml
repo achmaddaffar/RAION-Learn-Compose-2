@@ -1,0 +1,76 @@
+[versions]
+agp = "8.3.2"
+hiltAndroidGradlePlugin = "2.51.1"
+hiltWork = "1.2.0"
+konfettiCompose = "2.0.4"
+kotlin = "1.9.22"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.8.1"
+activityCompose = "1.9.0"
+composeBom = "2024.05.00"
+crypto = "1.1.0-alpha06"
+appcompat = "1.7.0"
+material = "1.13.0-alpha03"
+accompanist = "0.35.1-alpha"
+navigation = "2.7.7"
+coilCompose = "2.6.0"
+hiltNavigation = "1.2.0"
+sentry = "4.10.0"
+firebase = "33.1.2"
+firebaseMessaging = "24.0.0"
+googleServices = "4.4.2"
+workRuntimeKtx = "2.9.1"
+paging="3.3.2"
+room="2.6.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWork" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-material = { group = "androidx.compose.material", name = "material" }
+androidx-material-icon-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidGradlePlugin" }
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltAndroidGradlePlugin" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroidGradlePlugin" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigation" }
+konfetti-compose = { module = "nl.dionsegijn:konfetti-compose", version.ref = "konfettiCompose" }
+crypto = { module = "androidx.security:security-crypto-ktx", version.ref = "crypto" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+accompanist-pullrefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanist" }
+accompanist-permission = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+accompanist-shimmer = {module = "com.google.accompanist:accompanist-placeholder-material", version.ref = "accompanist"}
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+firebase-bom = {module = "com.google.firebase:firebase-bom", version.ref = "firebase"}
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+paging-runtime = {module = "androidx.paging:paging-runtime", version.ref = "paging"}
+paging-compose = {module = "androidx.paging:paging-compose", version.ref = "paging"}
+room-ktx = {module = "androidx.room:room-ktx", version.ref = "room"}
+room-runtime = {module = "androidx.room:room-runtime", version.ref = "room"}
+room-compiler = {module = "androidx.room:room-compiler", version.ref = "room"}
+room-paging = {module = "androidx.room:room-paging", version.ref = "room"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+sentry = { id = "io.sentry.android.gradle", version.ref = "sentry"}
