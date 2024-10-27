@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
@@ -66,6 +67,15 @@ dependencies {
 
     // coil
     implementation(libs.coil.compose)
+
+    // retrofit
+    implementation(libs.retrofit)
+
+    // gson
+    implementation(libs.converter.gson)
+
+    // compose-runtime-lifecycle
+    implementation(libs.androidx.lifecycle.runtime.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
