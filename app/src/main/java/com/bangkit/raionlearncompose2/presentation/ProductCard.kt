@@ -1,4 +1,4 @@
-package com.bangkit.raionlearncompose2
+package com.bangkit.raionlearncompose2.presentation
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -15,11 +15,12 @@ import coil.compose.SubcomposeAsyncImage
 fun ProductCard(
     productTitle: String,
     productImageUrl: String,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onProductClick: () -> Unit,
 ) {
     Card(
         onClick = {
-
+            onProductClick()
         },
         modifier = modifier
     ) {
